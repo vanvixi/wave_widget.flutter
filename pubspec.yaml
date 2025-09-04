@@ -1,7 +1,9 @@
 name: waves
-description: "Waves"
+description: Waves — Flutter animated wave widget
 version: 0.1.0
-homepage:
+homepage: https://github.com/vanvixi/waves
+repository: https://github.com/vanvixi/waves
+issue_tracker: https://github.com/vanvixi/waves
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
