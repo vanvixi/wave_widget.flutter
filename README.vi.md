@@ -1,4 +1,4 @@
-# Waves — Widget hoạt hình sóng trong Flutter
+# Wave Widget —  Hiệu ứng sóng động đẹp mắt cho Flutter
 
 <p align="left">
   <a href="https://pub.dev/packages/waves"><img src="https://img.shields.io/pub/v/waves.svg" alt="Pub"></a>
@@ -7,13 +7,13 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
 </p>
 
-Ngôn ngữ: [English](README.md) | Tiếng Việt
+Ngôn ngữ: [English](https://github.com/vanvixi/wave_widget.flutter/blob/main/README.md) | Tiếng Việt
 
 Một widget Flutter nhỏ gọn, nhanh và dễ tùy biến để tạo hiệu ứng **sóng động đẹp mắt**. Bạn có thể xây dựng các AppBar dịu nhẹ hoặc những cảnh đại dương chân thực với khả năng vẽ nhiều lớp và điều khiển hoạt ảnh mượt mà, chính xác.
 
 ---
 
-## ✨ Vì sao chọn Waves?
+## ✨ Vì sao chọn Wave Widget?
 
 - **Hiệu năng sẵn sàng cho production** — Vẽ dựa trên CustomPainter với **chi phí khung hình thấp** (đo trên macOS debug: *Raster ~2.5ms/frame*, *UI ~0.6ms/frame*).
 - **Mô hình sóng thực tế** — Các dạng sóng **Gerstner nâng cao** (nước sâu, nước nông, bão/nhấp nhô), cùng với các dạng cổ điển sine/cosine/triangle và sóng hài.
