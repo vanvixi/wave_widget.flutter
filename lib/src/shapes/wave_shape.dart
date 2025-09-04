@@ -6,11 +6,11 @@ part 'complex_shapes.dart';
 part 'gerstner_shapes.dart';
 
 /// Abstract base class for defining wave shape mathematical functions.
-/// 
+///
 /// A [WaveShape] defines how a wave curve is calculated at any given point.
 /// Different wave shapes produce different visual patterns, from simple
 /// sine waves to complex composite waves with harmonics and noise.
-/// 
+///
 /// Implementations must provide the [computeOffset] method that calculates
 /// the wave's y-coordinate for a given x-coordinate and wave parameters.
 abstract class WaveShape {
@@ -27,7 +27,7 @@ abstract class WaveShape {
   /// [frequency] - Number of wave cycles across the width
   /// [phase] - Phase offset in radians for wave positioning
   /// [verticalOffset] - Base vertical offset from the top
-  /// 
+  ///
   /// Returns an [Offset] with the calculated wave position.
   Offset computeOffset({
     required double x,

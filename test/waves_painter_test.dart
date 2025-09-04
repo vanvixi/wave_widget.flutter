@@ -42,7 +42,7 @@ void main() {
         );
 
         await tester.pumpWidget(wavesWidget);
-        
+
         final dynamic exception = tester.takeException();
         expect(exception, isA<ArgumentError>());
         expect(exception.toString(), contains('waveLayers must not be empty'));

@@ -24,7 +24,7 @@ void main() {
       test('should create with all parameters', () {
         const blur = MaskFilter.blur(BlurStyle.normal, 2.0);
         const waveShape = CosineShape();
-        
+
         const layer = WaveSolidLayer(
           duration: 1500,
           heightFactor: 0.8,
@@ -63,7 +63,8 @@ void main() {
         expect(paint.strokeWidth, 0.0);
       });
 
-      test('should create paint with stroke style when strokeWidth is provided', () {
+      test('should create paint with stroke style when strokeWidth is provided',
+          () {
         const layer = WaveSolidLayer(
           duration: 2000,
           heightFactor: 0.5,
@@ -209,7 +210,8 @@ void main() {
         expect(paint.shader, isNotNull);
       });
 
-      test('should create paint with stroke style when strokeWidth is provided', () {
+      test('should create paint with stroke style when strokeWidth is provided',
+          () {
         const gradient = LinearGradient(
           colors: [Colors.blue, Colors.green],
         );
@@ -273,7 +275,7 @@ void main() {
 
       test('should create gradient layer via factory', () {
         const gradient = LinearGradient(colors: [Colors.blue, Colors.green]);
-        
+
         const layer = WaveLayer.gradient(
           duration: 2000,
           heightFactor: 0.5,

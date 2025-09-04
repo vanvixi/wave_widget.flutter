@@ -5,7 +5,7 @@ import 'consts.dart';
 import 'layers/wave_layer.dart';
 
 /// Custom painter responsible for rendering animated wave layers on a canvas.
-/// 
+///
 /// The [WavesPainter] takes a list of [WaveLayer]s and renders them as
 /// animated wave patterns. It handles the mathematical calculations for
 /// wave positions, applies layer-specific properties like direction and
@@ -28,16 +28,16 @@ class WavesPainter extends CustomPainter {
 
   /// Base animation duration in milliseconds used for timing calculations
   final int baseDuration;
-  
+
   /// Base amplitude controlling overall wave height
   final double amplitude;
-  
+
   /// Wave frequency affecting the density of wave cycles
   final double frequency;
-  
+
   /// List of wave layers to render
   final List<WaveLayer> layers;
-  
+
   /// Animation object providing current animation state
   final Animation<double> animation;
 
@@ -104,7 +104,7 @@ class WavesPainter extends CustomPainter {
   /// [amplitude] - Amplitude for this calculation
   /// [phaseInRadians] - Current phase in radians
   /// [verticalOffset] - Base vertical offset
-  /// 
+  ///
   /// Returns an [Offset] representing the wave position at x.
   Offset _computeOffsetForLayer({
     required WaveLayer layer,

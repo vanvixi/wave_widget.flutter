@@ -417,7 +417,12 @@ class _AdvancedWavesDemoState extends State<AdvancedWavesDemo>
                   ),
                   waveShape: WaveShape.multiDirectionalGerstner(
                     steepness: 0.5,
-                    directions: [0.0, 0.785398, -0.785398, 1.570796], // 0°, 45°, -45°, 90°
+                    directions: [
+                      0.0,
+                      0.785398,
+                      -0.785398,
+                      1.570796
+                    ], // 0°, 45°, -45°, 90°
                     directionWeights: [1.0, 0.7, 0.5, 0.3],
                   ),
                 ),

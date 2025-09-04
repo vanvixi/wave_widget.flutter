@@ -130,7 +130,3 @@ abstract interface class WaveLayer {
         amplitudeMultiplier == otherLayer.amplitudeMultiplier;
   }
 }
-
-
-
-

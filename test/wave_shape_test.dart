@@ -173,12 +173,12 @@ void main() {
       });
 
       test('should create with custom spiral factor', () {
-        final spiralWave = WaveShape.spiral(spiralFactor: 0.02);
+        const spiralWave = WaveShape.spiral(spiralFactor: 0.02);
         expect((spiralWave as SpiralShape).spiralFactor, 0.02);
       });
 
       test('should compute offset with increasing amplitude', () {
-        final spiralWave = WaveShape.spiral(spiralFactor: 0.1);
+        const spiralWave = WaveShape.spiral(spiralFactor: 0.1);
 
         final offset1 = spiralWave.computeOffset(
           x: 10.0,
@@ -206,7 +206,7 @@ void main() {
       });
 
       test('should create via factory constructor', () {
-        final wave = WaveShape.spiral(spiralFactor: 0.02);
+        const wave = WaveShape.spiral(spiralFactor: 0.02);
         expect(wave, isA<SpiralShape>());
         expect((wave as SpiralShape).spiralFactor, 0.02);
       });

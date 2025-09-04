@@ -9,7 +9,7 @@ void main() {
       expect(WaveLayer, isA<Type>());
       expect(WaveShape, isA<Type>());
       expect(WavesWidget, isA<Type>());
-      
+
       // Test wave layer implementations
       expect(WaveSolidLayer, isA<Type>());
       expect(WaveGradientLayer, isA<Type>());
@@ -21,7 +21,7 @@ void main() {
         heightFactor: 0.8,
         color: Color(0xFF0000FF),
       );
-      
+
       expect(solidLayer, isA<WaveSolidLayer>());
       expect(solidLayer.duration, 2000);
       expect(solidLayer.heightFactor, 0.8);
@@ -29,9 +29,10 @@ void main() {
       const gradientLayer = WaveLayer.gradient(
         duration: 1500,
         heightFactor: 0.6,
-        gradient: LinearGradient(colors: [Color(0xFF0000FF), Color(0xFF00FF00)]),
+        gradient:
+            LinearGradient(colors: [Color(0xFF0000FF), Color(0xFF00FF00)]),
       );
-      
+
       expect(gradientLayer, isA<WaveGradientLayer>());
       expect(gradientLayer.duration, 1500);
       expect(gradientLayer.heightFactor, 0.6);
@@ -44,22 +45,22 @@ void main() {
       const square = WaveShape.square();
       const triangle = WaveShape.triangle();
       const sawtooth = WaveShape.sawtooth();
-      
+
       expect(sine, isA<WaveShape>());
       expect(cosine, isA<WaveShape>());
       expect(square, isA<WaveShape>());
       expect(triangle, isA<WaveShape>());
       expect(sawtooth, isA<WaveShape>());
-      
+
       // Test complex wave shapes
       const spiral = WaveShape.spiral(spiralFactor: 0.02);
       const harmonic = WaveShape.harmonic(harmonics: [1.0, 0.5]);
       const noise = WaveShape.noise(noiseFactor: 0.4, seed: 123);
-      
+
       expect(spiral, isA<WaveShape>());
       expect(harmonic, isA<WaveShape>());
       expect(noise, isA<WaveShape>());
-      
+
       // Test all Gerstner wave variants
       const gerstner = WaveShape.gerstner(steepness: 0.8);
       const multiDirectionalGerstner = WaveShape.multiDirectionalGerstner(
@@ -82,7 +83,7 @@ void main() {
         shoalingFactor: 1.5,
         bottomFriction: 0.2,
       );
-      
+
       expect(gerstner, isA<WaveShape>());
       expect(multiDirectionalGerstner, isA<WaveShape>());
       expect(deepWaterGerstner, isA<WaveShape>());
@@ -95,23 +96,24 @@ void main() {
         waves: [WaveShape.sine(), WaveShape.cosine(), WaveShape.square()],
         weights: [0.5, 0.3, 0.2],
       );
-      
+
       expect(compositeWave, isA<WaveShape>());
     });
 
     test('should create multi-layer wave configurations', () {
-      const layers =[
-         WaveLayer.solid(
+      const layers = [
+        WaveLayer.solid(
           duration: 3000,
           heightFactor: 0.9,
           color: Color(0x800000FF),
           direction: 1.0,
           waveShape: WaveShape.sine(),
         ),
-         WaveLayer.gradient(
+        WaveLayer.gradient(
           duration: 2500,
           heightFactor: 0.7,
-          gradient: LinearGradient(colors: [Color(0x8000FF00), Color(0x80FF0000)]),
+          gradient:
+              LinearGradient(colors: [Color(0x8000FF00), Color(0x80FF0000)]),
           direction: -1.0,
           phaseOffset: 90.0,
           waveShape: WaveShape.cosine(),
@@ -124,12 +126,12 @@ void main() {
           waveShape: WaveShape.harmonic(harmonics: [1.0, 0.5, 0.25]),
         ),
       ];
-      
+
       expect(layers.length, 3);
       expect(layers[0], isA<WaveSolidLayer>());
       expect(layers[1], isA<WaveGradientLayer>());
       expect(layers[2], isA<WaveSolidLayer>());
-      
+
       // Verify different configurations
       expect(layers[0].direction, 1.0);
       expect(layers[1].direction, -1.0);
@@ -147,7 +149,7 @@ void main() {
         ),
         throwsAssertionError,
       );
-      
+
       // Test heightFactor assertions
       expect(
         () => WaveLayer.solid(
@@ -157,7 +159,7 @@ void main() {
         ),
         throwsAssertionError,
       );
-      
+
       expect(
         () => WaveLayer.solid(
           duration: 2000,
