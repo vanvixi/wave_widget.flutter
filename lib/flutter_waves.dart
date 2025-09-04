@@ -12,7 +12,7 @@
 ///
 ///  ## Basic Usage:
 ///  ```dart
-///  import 'package:waves/waves.dart';
+///  import 'package:flutter_waves/flutter_waves.dart';
 ///
 ///  WavesWidget(
 ///   size: Size(400, 200),
