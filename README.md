@@ -1,20 +1,20 @@
-# Waves — Flutter animated wave widget
+# Wave Widget — Beautiful animated waves for Flutter
 
 <p align="left">
-  <a href="https://pub.dev/packages/waves"><img src="https://img.shields.io/pub/v/waves.svg" alt="Pub"></a>
-  <a href="https://pub.dev/packages/waves/score"><img src="https://img.shields.io/pub/likes/waves?logo=dart" alt="Likes on pub.dev"></a>
-  <a href="https://github.com/your-username/waves"><img src="https://img.shields.io/github/stars/your-username/waves.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on Github"></a>
+  <a href="https://pub.dev/packages/wave_widget"><img src="https://img.shields.io/pub/v/wave_widget.svg" alt="Pub"></a>
+  <a href="https://pub.dev/packages/wave_widget/score"><img src="https://img.shields.io/pub/likes/wave_widget?logo=dart" alt="Likes on pub.dev"></a>
+  <a href="https://github.com/your-username/wave_widget"><img src="https://img.shields.io/github/stars/vanvixi/wave_widget.flutter.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on Github"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
 </p>
 
-Language: English | [Tiếng Việt](README.vi.md)
+Language: English | [Tiếng Việt](https://github.com/vanvixi/wave_widget.flutter/blob/main/README.vi.md)
 
 A tiny, fast, and highly‑customizable Flutter widget for **beautiful animated waves**. Build calm AppBars or realistic
 ocean scenes with layered rendering and smooth, precise animation control.
 
 ---
 
-## ✨ Why Waves?
+## ✨ Why Wave Widget?
 
 - **Production‑ready performance** — CustomPainter‑based rendering with **low frame costs** (measured on macOS debug:
   *Raster ~2.5ms/frame*, *UI ~0.6ms/frame*).
