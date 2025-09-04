@@ -1,5 +1,5 @@
 name: wave_widget
-description: Waves — Flutter animated wave widget
+description: Wave Widget — Beautiful animated waves for Flutter
 version: 0.1.0
 homepage: https://github.com/vanvixi/wave_widget.flutter
 repository: https://github.com/vanvixi/wave_widget.flutter
@@ -25,5 +25,5 @@ topics:
   - visualizer
 
 screenshots:
-  - description: "Waves demo"
+  - description: "WavesWidget demo"
     path: assets/demo.webp
