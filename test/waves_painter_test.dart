@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:waves/waves.dart';
+import 'package:flutter_waves/waves.dart';
 
 void main() {
   group('WavesPainter Tests', () {

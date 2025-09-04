@@ -25,8 +25,8 @@
 ///   ],
 ///  )
 ///  ```
-library waves;
+library flutter_waves;
 
-export 'package:waves/src/layers/wave_layer.dart';
-export 'package:waves/src/shapes/wave_shape.dart';
-export 'package:waves/src/waves_widget.dart';
+export 'package:flutter_waves/src/layers/wave_layer.dart';
+export 'package:flutter_waves/src/shapes/wave_shape.dart';
+export 'package:flutter_waves/src/waves_widget.dart';

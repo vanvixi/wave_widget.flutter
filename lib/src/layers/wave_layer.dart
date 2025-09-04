@@ -1,9 +1,9 @@
 import 'package:flutter/rendering.dart';
 
-import '../../waves.dart';
+import '../shapes/wave_shape.dart';
 
-part 'wave_solid_layer.dart';
 part 'wave_gradient_layer.dart';
+part 'wave_solid_layer.dart';
 
 /// Abstract base class for defining wave layer properties and behavior.
 ///
