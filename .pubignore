@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+build/
+pubspec.lock
+**/build/**
+**/.dart_tool/**
+**/.flutter-plugins*
+example/build/
+example/.dart_tool/
+assets/*.mp4
