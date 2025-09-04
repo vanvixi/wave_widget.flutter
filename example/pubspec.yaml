@@ -17,7 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_waves:
+  wave_widget:
     # When depending on this package from a real application you should use:
     #   waves: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_waves/flutter_waves.dart';
+import 'package:wave_widget/wave_widget.dart';
 
 void main() {
   runApp(const WavesApp());
