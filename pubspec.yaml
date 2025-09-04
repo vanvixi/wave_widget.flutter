@@ -23,3 +23,7 @@ topics:
   - background
   - wave
   - visualizer
+
+screenshots:
+  - description: "Waves demo"
+    path: assets/demo.webp
