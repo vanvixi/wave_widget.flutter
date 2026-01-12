@@ -45,6 +45,7 @@ class WavesPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     for (int layerIndex = 0; layerIndex < layers.length; layerIndex++) {
       final layer = layers[layerIndex];
+      if (layer.heightFactor <= 0) continue;
       final verticalOffset = size.height * (1 - layer.heightFactor);
       final layerDuration = layer.duration.toDouble();
       final speedMultiplier = baseDuration / layerDuration;

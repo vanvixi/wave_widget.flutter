@@ -30,7 +30,7 @@ abstract interface class WaveLayer {
     this.amplitudeMultiplier = 1.0,
     this.waveShape = const WaveShape.sine(),
   })  : assert(duration > 0.0),
-        assert(heightFactor > 0.0 && heightFactor <= 1.0);
+        assert(heightFactor >= 0.0 && heightFactor <= 1.0);
 
   /// Vertical position factor (0.0 to 1.0) determining wave height placement
   final double heightFactor;
